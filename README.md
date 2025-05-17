@@ -1,14 +1,10 @@
-# RouePilierVie
-Roue et Pilliers de la Vie
+# Roue et Pilliers de la Vie
 
 
 
 # Les 12 Piliers d’une Vie Équilibrée et Bénie
 
-Version joyeuse et inspirante avec plein d’emojis !
 
-
----
 
 ## Introduction
 
