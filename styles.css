@@ -1,0 +1,165 @@
+:root {
+    --primary-color: #4a89dc; /* Bleu doux */
+    --secondary-color: #48cfad; /* Vert doux */
+    --light-color: #f5f7fa; /* Blanc cassé */
+    --success-color: #48cfad; /* Vert */
+    --warning-color: #ffce54; /* Jaune doux */
+    --danger-color: #ed5565; /* Rouge doux */
+    --light-bg: var(--light-color);
+    --dark-bg: #2f3640;
+    --light-text: #333;
+    --dark-text: #f5f6fa;
+    --card-bg: #ffffff;
+    --card-bg-dark: #353b48;
+    --border-color: #e0e6ed;
+    --border-color-dark: #4b5563;
+}
+
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--light-text);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+body.dark-mode .card {
+    background-color: var(--card-bg-dark);
+    border-color: var(--border-color-dark);
+}
+
+body.dark-mode .nav-tabs .nav-link {
+    color: var(--dark-text);
+}
+
+body.dark-mode .nav-tabs .nav-link.active {
+    background-color: var(--card-bg-dark);
+    border-color: var(--border-color-dark) var(--border-color-dark) var(--card-bg-dark);
+    color: var(--primary-color);
+}
+
+.card {
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    background-color: var(--card-bg);
+    margin-bottom: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.category-card {
+    cursor: pointer;
+}
+
+.category-card .card-header {
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.75rem 1rem;
+}
+
+.habit-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.habit-item:last-child {
+    border-bottom: none;
+}
+
+.habit-checkbox {
+    margin-right: 0.75rem;
+    transform: scale(1.2);
+}
+
+.habit-name {
+    flex-grow: 1;
+}
+
+.streak-badge {
+    background-color: var(--success-color);
+    color: white;
+    border-radius: 12px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.calendar {
+    width: 100%;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+}
+
+.calendar-day-header {
+    text-align: center;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.calendar-day:hover {
+    background-color: rgba(99, 102, 241, 0.1);
+}
+
+.calendar-day.today {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.calendar-day.other-month {
+    opacity: 0.5;
+}
+
+.calendar-day.completed {
+    background-color: rgba(16, 185, 129, 0.2);
+}
+
+.progress {
+    height: 1.5rem;
+    border-radius: 0.75rem;
+}
+
+.progress-bar {
+    border-radius: 0.75rem;
+    transition: width 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .calendar-day {
+        font-size: 0.8rem;
+        padding: 0.2rem;
+    }
+}
