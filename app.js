@@ -80,6 +80,46 @@ document.addEventListener('DOMContentLoaded', function() {
             { id: 'fin6', name: 'Dette réduite', streak: 0 },
             { id: 'fin7', name: 'Négociation', streak: 0 },
             { id: 'fin8', name: 'Plan long terme', streak: 0 }
+        ]},
+		 { id: 'loisirs', name: 'Loisirs', color: '#a0d468', habits: [
+            { id: 'lois1', name: 'Activité créative', streak: 0 },
+            { id: 'lois2', name: 'Temps de détente', streak: 0 },
+            { id: 'lois3', name: 'Pratique artistique', streak: 0 },
+            { id: 'lois4', name: 'Jeu/Divertissement', streak: 0 },
+            { id: 'lois5', name: 'Découverte culturelle', streak: 0 },
+            { id: 'lois6', name: 'Temps en plein air', streak: 0 },
+            { id: 'lois7', name: 'Passe-temps favori', streak: 0 },
+            { id: 'lois8', name: 'Expression personnelle', streak: 0 }
+        ]},
+        { id: 'voyage', name: 'Voyage', color: '#4fc1e9', habits: [
+            { id: 'voy1', name: 'Planification voyage', streak: 0 },
+            { id: 'voy2', name: 'Apprentissage langue', streak: 0 },
+            { id: 'voy3', name: 'Découverte locale', streak: 0 },
+            { id: 'voy4', name: 'Budget voyage', streak: 0 },
+            { id: 'voy5', name: 'Préparation itinéraire', streak: 0 },
+            { id: 'voy6', name: 'Culture destination', streak: 0 },
+            { id: 'voy7', name: 'Réservation/logistique', streak: 0 },
+            { id: 'voy8', name: 'Souvenirs/partage', streak: 0 }
+        ]},
+        { id: 'lecture', name: 'Lecture et Certifications', color: '#ac92ec', habits: [
+            { id: 'lec1', name: 'Lecture éducative', streak: 0 },
+            { id: 'lec2', name: 'Prise de notes', streak: 0 },
+            { id: 'lec3', name: 'Formation en ligne', streak: 0 },
+            { id: 'lec4', name: 'Révision certification', streak: 0 },
+            { id: 'lec5', name: 'Lecture plaisir', streak: 0 },
+            { id: 'lec6', name: 'Résumé/concepts clés', streak: 0 },
+            { id: 'lec7', name: 'Pratique compétences', streak: 0 },
+            { id: 'lec8', name: 'Partage connaissances', streak: 0 }
+        ]},
+        { id: 'reseau', name: 'Réseau', color: '#ed5565', habits: [
+            { id: 'res1', name: 'Contact nouveau', streak: 0 },
+            { id: 'res2', name: 'Entretien relation', streak: 0 },
+            { id: 'res3', name: 'Participation événement', streak: 0 },
+            { id: 'res4', name: 'Partage opportunité', streak: 0 },
+            { id: 'res5', name: 'Mentorat/demande aide', streak: 0 },
+            { id: 'res6', name: 'Mise à jour profil', streak: 0 },
+            { id: 'res7', name: 'Recommendation', streak: 0 },
+            { id: 'res8', name: 'Feedback réseau', streak: 0 }
         ]}
     ];
 
